@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hello! :D | I'm AmpleVarious.c4!</title>
+
+<style>
+:root{
+    --bg:#111;
+    --card:#1b1b1b;
+    --accent:#5b8cff;
+    --text:#fff;
+    --secondary:#aaa;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Segoe UI,sans-serif;
+}
+
+body{
+    background:var(--bg);
+    color:var(--text);
+}
+
+header{
+    text-align:center;
+    padding:60px 20px;
+}
+
+#pfp{
+    width:140px;
+    height:140px;
+    border-radius:50%;
+    border:4px solid var(--accent);
+    object-fit:cover;
+}
+
+.username{
+    margin-top:15px;
+    font-size:2rem;
+    font-weight:bold;
+}
+
+.subtitle{
+    color:var(--secondary);
+    margin-top:8px;
+}
+
+.projects{
+    max-width:1200px;
+    margin:auto;
+    padding:30px;
+    display:grid;
+    gap:30px;
+}
+
+.project{
+    background:var(--card);
+    border-radius:16px;
+    overflow:hidden;
+}
+
+.thumbnail{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.project-content{
+    padding:20px;
+}
+
+.logo-circle{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+.logo-wide{
+    height:50px;
+    max-width:250px;
+    object-fit:contain;
+}
+
+.project-header{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    margin-bottom:15px;
+}
+
+.project-name{
+    font-size:1.4rem;
+    font-weight:bold;
+}
+
+.description{
+    color:#ddd;
+    margin-bottom:15px;
+    line-height:1.5;
+}
+
+.links{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+.links a{
+    text-decoration:none;
+    color:white;
+    background:var(--accent);
+    padding:8px 12px;
+    border-radius:8px;
+}
+
+footer{
+    text-align:center;
+    padding:40px;
+    color:var(--secondary);
+}
+</style>
+</head>
+<body>
+
+<header>
+
+    <!-- Discord PFP -->
+    <img id="pfp" src="sources/images/pfp.jpg" alt="Profile Picture">
+
+    <div class="username">AmpleVarious.c4</div>
+
+    <div class="subtitle">
+        Developer • Creator • UI Designer</div>
+    <div class="subtitle">
+        NOTE: Most of the projects are yet to be finished.</div>
+
+</header>
+
+<section class="projects">
+
+    <!-- PROJECT 1 -->
+    <div class="project">
+
+        <img class="thumbnail"
+        src="sources/images/whatsdownalpha_thumb.png">
+
+        <div class="project-content">
+
+            <div class="project-header">
+
+                <!-- Circle logo -->
+                <img class="logo-circle"
+                src="sources/images/whatsdownalpha_logo.png">
+
+                <div class="project-name">
+                    What'sDown</div>
+
+            </div>
+
+            <div class="description">
+                What'sDown is a free and open-source project that tries to serve a similar function as Vencord and Revenge, popular modification clients for Discord, but for WhatsApp, still using the original client, in legacy of WhatsAppPlus, GBWhatsApp, and other projects.
+            </div>
+
+            <div class="links">
+                <!--<a href="#">Website</a>-->
+                <a href="https://www.reddit.com/r/whatsdownhelp/">Sub-reddit</a>
+                <a href="https://github.com/amplevarious/whatsdown">GitHub</a>
+                <a href="https://github.com/amplevarious/whatsdown/releases">Download</a>
+            </div>
+
+        </div>
+    </div>
+    
+       <div class="project">
+
+        <img class="thumbnail"
+        src="sources/images/novarevivalthumb.png">
+
+        <div class="project-content">
+
+            <div class="project-header">
+
+                <!-- Circle logo -->
+                <img class="logo-circle"
+                src="sources/images/novarevival_logo.png">
+
+                <div class="project-name">
+                    NovaRevival</div>
+
+            </div>
+
+            <div class="description">
+                NovaRevival is a Windows Phone (7-7.8) revival project, focused on preserving the soruces of custom roms, hacks, apps, and others for this forgotten OS. For the future, we plan to expand our archive, make a appstore, and perhaps a full revival of the Windows Live ID ecosystem, like the Marketplace.</div>
+
+            <div class="links">
+                <a href="https://novarevival.marmak.net.pl/">Website</a>
+                <!--<a href="https://github.com/amplevarious/whatsdown">GitHub</a>-->
+                <!--<a href="#">Download</a>-->
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- PROJECT 2 -->
+    <div class="project">
+
+        <img class="thumbnail"
+        src="sources/images/remember_it_thumb.png">
+
+        <div class="project-content">
+
+            <div class="project-header">
+
+                <!-- Long logo -->
+                <img class="logo-circle"
+                src="sources/images/remember_it_logo_ig.png">
+                <div class="project-name">"Remember It?"</div>
+
+            </div>
+
+            <div class="description">
+                A perhaps abandonned asymetrical game, for Roblox. Was planned to be made based on an entire drama I've had, but, I didn't finish it due to the hate I received when releasing some of the OST's, because it was around that drama, causing, yet another drama. But I'm planning to focus on this project sometime in my developer life. On both the thumbnail and logo, say "cyn4", it was my old username, based on cynessa from Murder Drones.</div>
+
+            <!--<div class="links">
+                <a href="#">Website</a>
+                <a href="#">Source</a>
+            </div>
+            -->
+        </div>
+    </div>
+    
+    <div class="project">
+
+        <img class="thumbnail"
+        src="sources/images/mire_thumb.png">
+
+        <div class="project-content">
+
+            <div class="project-header">
+
+                <!-- Long logo -->
+                <img class="logo-circle"
+                src="sources/images/mire_logo.png">
+                <div class="project-name">Make It Rain Engine</div>
+
+            </div>
+
+            <div class="description">
+                A FNF engine based on NovaFlare Engine. I plan to introduce features like dynamic lyrics, 3D mode, better note manipulation systems, better camera manipulation systems, CD &amp; DVD modes (CD is 2D and studio version, DVD is 3D and live version) a more dynamic experience, and more other features. More focused for lyrical songs being charted, and more dynamic gameplay.</div>
+
+            <div class="links">
+                <!--<a href="#">Website</a>-->
+                <a href="#">Source</a>
+            </div>
+            
+        </div>
+    </div>
+    
+    <div class="project">
+
+        <img class="thumbnail"
+        src="sources/images/mire-f_thumb.png">
+
+        <div class="project-content">
+
+            <div class="project-header">
+
+                <!-- Long logo -->
+                <img class="logo-circle"
+                src="sources/images/mire-f_logo.png">
+                <div class="project-name">Make It Rain Engine: Fernandinho</div>
+
+            </div>
+
+            <div class="description">The supposed first game using MIRE. It would use Fernandinho's songs, a famous rock artist in Brazil. It would also use 90% of MIRE's features, and include one of his albums, Teus Sonhos (Ao Vivo, HSBC Arena RJ), as a tutorial for the gameplay features.</div>
+
+            <!--<div class="links">
+                <a href="#">Website</a>
+                <a href="#">Source</a>
+            </div>
+            -->
+        </div>
+    </div>
+    
+    <div class="project">
+
+        <img class="thumbnail"
+        src="sources/images/nowaybackmachine-ss.png">
+
+        <div class="project-content">
+
+            <div class="project-header">
+
+                <!-- Long logo -->
+                <img class="logo-wide"
+                src="sources/images/nowaybackmachinelogo.png">
+                
+
+            </div>
+
+            <div class="description">A FNAF:SL fangame made by me, Norvyn3, v, and xhnz. It's lore would be around Roblox's timeline, instead of just being a repetitive "i miss retro" game, it will be directly at Roblox's corporation's story.&nbsp;</div>
+
+            <!--<div class="links">
+                <a href="#">Website</a>
+                <a href="#">Source</a>
+            </div>
+            -->
+        </div>
+    </div>
+    
+    <div class="project">
+
+        <img class="thumbnail"
+        src="sources/images/banneh.jpg">
+
+        <div class="project-content">
+
+            <div class="project-header">
+
+                <!-- Long logo -->
+                <img class="logo-circle"
+                src="sources/images/pfp.jpg">
+                <div class="project-name">Me!</div>
+
+            </div>
+
+            <div class="description">
+                I'm the creator of all these projects. I'm brazillian, and I've always wanted to have my own YouTube channel, website, and be a game developer. But really, I'm just a nerd. I'm nice, and always open for conversations, allthough I have my problems. I like rock. The rest of my socials are listed at my Discord profile.</div>
+
+            <div class="links">
+                <a href="#">Discord Server</a>
+                <a href="#">YouTube channel</a>
+            </div>
+            
+        </div>
+    </div>
+
+</section>
+
+<footer>
+© 2026 AmpleVarious.c4 • All Rights Reserved
+</footer>
+
+</body>
+</html>
