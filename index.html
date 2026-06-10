@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>AmpleVarious.c4 | Wiki Portfolio</title>
+        <title>AmpleVarious.c4 | My Portfolio :D</title>
         <link rel="icon" type="image/x-icon" href="sources/images/favicon.ico" />
 
         <style>
@@ -11,8 +11,8 @@
                 --bg: #141414;
                 --wiki-container: #1b1b1b;
                 --wiki-card: #242424;
-                --accent: #5b8cff;
-                --accent-hover: #4073e6;
+                --accent: #5b00cd;
+                --accent-hover: #a200ff;
                 --text: #ffffff;
                 --secondary: #aaaaaa;
                 --border: #333333;
@@ -32,7 +32,6 @@
                 padding: 20px;
             }
 
-            /* Wiki Layout Wrapper */
             .wiki-wrapper {
                 max-width: 1100px;
                 margin: 30px auto;
@@ -45,7 +44,6 @@
                 gap: 20px;
             }
 
-            /* Wiki Main Header */
             .wiki-header {
                 border-bottom: 3px solid var(--accent);
                 padding-bottom: 10px;
@@ -64,7 +62,6 @@
                 margin-top: 5px;
             }
 
-            /* Content split into Main Text and Infobox */
             .wiki-columns {
                 display: grid;
                 grid-template-columns: 1fr 320px;
@@ -76,11 +73,10 @@
                     grid-template-columns: 1fr;
                 }
                 .infobox {
-                    order: -1; /* Puts infobox on top on mobile devices */
+                    order: -1;
                 }
             }
 
-            /* Main Article Content Styles */
             .main-content p {
                 margin-bottom: 15px;
                 color: #e0e0e0;
@@ -97,7 +93,6 @@
                 gap: 10px;
             }
 
-            /* Interactive Media Gallery Styles */
             .wiki-gallery {
                 background: var(--wiki-card);
                 border: 1px solid var(--border);
@@ -163,6 +158,7 @@
             .gallery-dots {
                 display: flex;
                 justify-content: center;
+                flex-wrap: wrap;
                 gap: 6px;
                 padding: 10px;
                 background: rgba(0, 0, 0, 0.1);
@@ -180,7 +176,6 @@
                 background: var(--accent);
             }
 
-            /* Wiki Project Grid Style */
             .project-grid {
                 display: grid;
                 grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -242,7 +237,6 @@
                 flex-grow: 1;
             }
 
-            /* Wiki Buttons */
             .wiki-links {
                 display: flex;
                 flex-wrap: wrap;
@@ -264,7 +258,6 @@
                 background: var(--accent);
             }
 
-            /* Right Infobox Layout */
             .infobox {
                 background: var(--wiki-card);
                 border: 1px solid var(--border);
@@ -348,7 +341,7 @@
 
             .wiki-blockquote {
                 background-color: #1b1b1b;
-                border-left: 4px solid #5b8cff;
+                border-left: 4px solid #420560;
                 margin: 20px 0;
                 padding: 15px 20px;
                 border-radius: 0 8px 8px 0;
@@ -384,7 +377,7 @@
             <header class="wiki-header">
                 <h1 class="wiki-title">AmpleVarious.c4</h1>
                 <div class="wiki-subtitle">I made all this, myself. - Ample</div>
-                <div class="wiki-subtitle" style="color: #ff6b6b; font-weight: bold; margin-top: 10px">
+                <div class="wiki-subtitle" style="color: #ff0000; font-weight: bold; margin-top: 10px">
                     ⚠️ NOTE: Most of the projects are yet to be finished.
                 </div>
             </header>
@@ -393,213 +386,45 @@
                 <p>
                     “Why so much crazyness? So much disgrace and violence, the pleasure of killing for drugs, drugs kill so many people, for drugs.”
                 </p>
-                <span class="quote-author">— Hell's Zenith, from Remember It.</span>
+                <span class="quote-author">— Kim, from Catedral. (Rio De Janeiro a Dezembro, from Além do Nível Do Mar)</span>
             </div>
 
             <div class="wiki-columns">
                 <main class="main-content">
-                    <p>
-                        <strong>AmpleVarious.c4</strong> is a Brazilian developer, creator, UI designer, and writer.
-                        Describing themselves as a "nerd," they focus primarily on open-source tool modifications, retro
-                        operating system preservation, and community-driven game development experiences within
-                        platforms like Roblox.
-                    </p>
-                    <p>
-                        They are widely open to casual conversations and actively maintain public code repositories
-                        formerly grouped alongside a personal community hub.
-                    </p>
+                    <p><strong><span style="font-weight: 400;">I am </span>AmpleVarious.c4,</strong> a Brazilian developer, creator, director, UI designer, and writer, amongst other things. I'm a "nerd", I like coding and making stuff for fun, they say that I focus too much on the future instead of the present, which, is honestly true. </p>
+                    <p>I'm open to anything you want to talk about! From helping my projects to helping YOUR projects, I have some free time!</p>
 
-                    <h2 class="wiki-section-title">Media &amp; Showcase Gallery</h2>
-                    <div class="wiki-gallery">
-                        <div class="gallery-header" id="galleryTitle">Developer Profile Picture</div>
-                        <div class="gallery-viewport">
-                            <button class="gallery-btn btn-prev" onclick="changeSlide(-1)">&#10094;</button>
-                            <img id="galleryImage" src="sources/images/pfp-new-new2.jpg" alt="Gallery Showcase" />
-                            <button class="gallery-btn btn-next" onclick="changeSlide(1)">&#10095;</button>
-                        </div>
-                        <div class="gallery-dots" id="galleryDots">
-                            <div class="dot active"></div>
-                            <div class="dot"></div>
-                            <div class="dot"></div>
-                            <div class="dot"></div>
-                            <div class="dot"></div>
-                            <div class="dot"></div>
-                            <div class="dot"></div>
-                            <div class="dot"></div>
-                            <div class="dot"></div>
-                            <div class="dot"></div>
-                            <div class="dot"></div>
-                            <div class="dot"></div>
-                            <div class="dot"></div>
-                            <div class="dot"></div>
-                            <div class="dot"></div>
-                            <div class="dot"></div>
-                            <div class="dot"></div>
-                            <div class="dot"></div>
-                            <div class="dot"></div>
-                            <div class="dot"></div>
-                            <div class="dot"></div>
-                            <div class="dot"></div>
-                        </div>
-                    </div>
-
-                    <h2 class="wiki-section-title">Projects</h2>
+                    <h2 class="wiki-section-title">Current Projects</h2>
                     <div class="project-grid">
                         <div class="project-card">
-                            <img
-                                class="thumbnail"
-                                src="sources/images/whatsdownalpha_thumb.png"
-                                alt="What'sDown Thumbnail" />
+                            <div class="gallery-viewport" style="height: 160px;">
+                                <button class="gallery-btn btn-prev" onclick="changeSlide(-1)">&#10094;</button>
+                                <img id="galleryImage" src="sources/images/title-screen.png" alt="Gallery Showcase" style="width: 100%; height: 100%; object-fit: cover;" />
+                                <button class="gallery-btn btn-next" onclick="changeSlide(1)">&#10095;</button>
+                            </div>
+
                             <div class="project-body">
                                 <div class="project-meta">
-                                    <img class="logo-circle" src="sources/images/whatsdownalpha_logo.png" />
-                                    <span class="project-name">What'sDown</span>
+                                    <img class="logo-wide" src="sources/images/nowaybackmachinelogo.png" alt="NoWayBack Machine Logo" />
                                 </div>
+
                                 <div class="project-desc">
-                                    A free and open-source client that mimics modifications like Vencord and
-                                    Revenge, bringing client features to WhatsApp while relying safely on the original
-                                    client.
-                                </div>
-                                <div class="wiki-links">
-                                    <a href="https://www.reddit.com/r/whatsdownhelp/" target="_blank">Sub-reddit</a>
-                                    <a href="https://github.com/amplevarious/whatsdown" target="_blank">GitHub</a>
-                                    <a href="https://github.com/amplevarious/whatsdown/releases" target="_blank">Download</a>
-                                </div>
+                                    <div class="gallery-dots" id="galleryDots" style="margin-bottom: 10px;"><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot active"></div><div class="dot"></div><div class="dot"></div></div>
+                                    A game inspired by FNAF:SL &amp; Poppy Playtime (Chapters 2, 3 &amp; 5) that tells a fictional story about Roblox Corporation, Roblox Science Labs and many other stuff.</div>
                             </div>
                         </div>
 
                         <div class="project-card">
-                            <img
-                                class="thumbnail"
-                                src="sources/images/novarevivalthumb.png"
-                                alt="NovaRevival Thumbnail" />
+                            <img class="thumbnail" src="sources/images/novarevivalthumb.png" alt="NovaRevival Thumbnail" />
                             <div class="project-body">
                                 <div class="project-meta">
-                                    <img class="logo-circle" src="sources/images/novarevival_logo.png" />
+                                    <img class="logo-circle" src="sources/images/novarevival_logo.png" alt="NovaRevival Logo" />
                                     <span class="project-name">NovaRevival</span>
                                 </div>
                                 <div class="project-desc">
-                                    A platform dedicated to archiving custom ROMs, third-party apps, hacks, and
-                                    resources for the Windows Phone (7-7.8) environment. Plans include an independent ecosystem.
-                                </div>
+                                    A platform dedicated to archiving custom ROMs, third-party apps, hacks, and resources for the Windows Phone (7-7.8) environment. Plans include an independent ecosystem in the future.</div>
                                 <div class="wiki-links">
                                     <a href="https://novarevival.marmak.net.pl/" target="_blank">Website</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <h2 class="wiki-section-title">Roblox &amp; Rhythm Game Engines</h2>
-                    <div class="project-grid">
-                        <div class="project-card">
-                            <img class="thumbnail" src="sources/images/remember_it_thumb.png" />
-                            <div class="project-body">
-                                <div class="project-meta">
-                                    <img class="logo-circle" src="sources/images/remember_it_logo_ig.png" />
-                                    <span class="project-name">"Remember It?"</span>
-                                </div>
-                                <div class="project-desc">
-                                    An asymmetric game structure originally planned around real-life events. Developed
-                                    under the legacy moniker "Cyn⁴" (derived from Murder Drones). Production is
-                                    currently paused.
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="project-card">
-                            <img class="thumbnail" src="sources/images/no-img.png" />
-                            <div class="project-body">
-                                <div class="project-meta">
-                                    <img class="logo-circle" src="sources/images/no-img.png" />
-                                    <span class="project-name">Timelines</span>
-                                </div>
-                                <div class="project-desc">
-                                    A conceptual Roblox experience designed to span across 7 sequential installments
-                                    tracking pieces of a fractured heart element.
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="project-card">
-                            <img class="thumbnail" src="sources/images/nowaybackmachine-ss.png" />
-                            <div class="project-body">
-                                <div class="project-meta">
-                                    <img class="logo-wide" src="sources/images/nowaybackmachinelogo.png" />
-                                </div>
-                                <div class="project-desc">
-                                    A detailed FNAF:SL fan-project co-developed alongside Norvyn3, v, and xhnz, mapping
-                                    out custom lore regarding alternate corporate histories.
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="project-card">
-                            <img class="thumbnail" src="sources/images/mire_thumb.png" />
-                            <div class="project-body">
-                                <div class="project-meta">
-                                    <img class="logo-circle" src="sources/images/mire_logo.png" />
-                                    <span class="project-name">Make It Rain Engine</span>
-                                </div>
-                                <div class="project-desc">
-                                    An optimized custom FNF branching framework featuring modular setups for lyric
-                                    coordination, perspective rendering adjustments, and dynamic camera shifts.
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="project-card">
-                            <img class="thumbnail" src="sources/images/mire-f_thumb.png" />
-                            <div class="project-body">
-                                <div class="project-meta">
-                                    <img class="logo-circle" src="sources/images/mire-f_logo.png" />
-                                    <span class="project-name">MIRE: Fernandinho</span>
-                                </div>
-                                <div class="project-desc">
-                                    The planned flagship launch title showcasing the MIRE foundation engine,
-                                    incorporating mapped sets from legendary Brazilian rock performer Fernandinho, the starter album being "Teus Sonhos" (DVD, Live at HSBC Arena, RJ), the first 3 songs in form of&nbsp;tutorial.</div>
-                            </div>
-                        </div>
-
-                        <div class="project-card">
-                            <img class="thumbnail" src="sources/images/stereocity_snapshotdialog.png" />
-                            <div class="project-body">
-                                <div class="project-meta">
-                                    <img class="logo-wide" src="sources/images/stereocity_logo.png" />
-                                </div>
-                                <div class="project-desc">
-                                    An expansive open-world sandbox narrative layout built for exploration and
-                                    atmospheric quest solving.
-                                </div>
-                                <div class="wiki-links">
-                                    <a href="/extras/stereo_city_end_dialog.txt">End Dialog</a>
-                                    <a href="/extras/stereo_city_dialogue_bgSong.wav">End Dialog Theme</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="project-card">
-                            <img class="thumbnail" src="sources/images/no-img.png" />
-                            <div class="project-body">
-                                <div class="project-meta">
-                                    <img class="logo-circle" src="sources/images/no-img.png" />
-                                    <span class="project-name">TuneBox</span>
-                                </div>
-                                <div class="project-desc">
-                                    A functional media application template configured for Stereo City playback
-                                    behaviors, designed after classic Zune layouts.
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="project-card">
-                            <img class="thumbnail" src="sources/images/no-img.png" />
-                            <div class="project-body">
-                                <div class="project-meta">
-                                    <img class="logo-wide" src="sources/images/roblox_Cards_tcg.png" />
-                                </div>
-                                <div class="project-desc">
-                                    A trading card pack simulator featuring built-in multiplayer crossover nodes and
-                                    internal currency arcade lobbies.
                                 </div>
                             </div>
                         </div>
@@ -607,9 +432,14 @@
                 </main>
 
                 <aside class="infobox">
+                    <div class="infobox-banner-wrapper" style="margin-bottom: 12px;">
+                        <img src="sources/images/banner.jpg" alt="Developer Banner" style="width: 100%; height: 90px; object-fit: cover; border-radius: 4px; border: 1px solid var(--border);" />
+                    </div>
+
                     <div class="infobox-title">AmpleVarious.c4</div>
+
                     <div class="infobox-pfp-wrapper">
-                        <img id="pfp" src="sources/images/pfp-new-new2.jpg" alt="Profile Picture" />
+                        <img id="pfp" src="sources/images/pfp.jpg" alt="Profile Picture" />
                     </div>
 
                     <table class="infobox-data">
@@ -623,11 +453,11 @@
                         </tr>
                         <tr>
                             <th>Interests</th>
-                            <td>Rock music, Tech, Game Dev</td>
+                            <td>Rock Music, Tech, Game Development, Indie Projects</td>
                         </tr>
                         <tr>
                             <th>Aliases</th>
-                            <td>Cyn⁴, C4L, C4L3B3, SouSand</td>
+                            <td>Ample, AmpleVarious, Ample's Projects, Ample's Projects Team, NovaRevival Team</td>
                         </tr>
                         <tr>
                             <th>Telegram</th>
@@ -649,120 +479,106 @@
         <footer>© 2026 AmpleVarious.c4 • All Rights Reserved</footer>
 
         <script>
-            const slides = [
-                {
-                    title: "Developer Profile Picture",
-                    img: "sources/images/pfp-new-new2.jpg"
-                },
-                {
-                    title: "What'sDown Alpha Logo",
-                    img: "sources/images/whatsdownalpha_thumb.png"
-                },
-                {
-                    title: "NovaRevival Dashboard",
-                    img: "sources/images/novarevivalthumb.png"
-                },
-                {
-                    title: "Remember It? Alpha State",
-                    img: "sources/images/remember_it_thumb.png"
-                },
-                {
-                    title: "Stereo City End Dialog Snapshot",
-                    img: "sources/images/stereocity_snapshotdialog.png"
-                },
-                {
-                    title: "Developer Banner",
-                    img: "sources/images/banner-new-new.jpg"
-                },
-                {
-                    title: "Remember It? Hell's Zenith (Character) Sneak Peek 1",
-                    img: "sources/images/hellszenith_1.png"
-                },
-                {
-                    title: "Remember It? Hell's Zenith (Character) Sneak Peek 2",
-                    img: "sources/images/hells_zenith_2.png"
-                },
-                {
-                    title: "Remember It? Hell's Zenith (Character) Sneak Peek 3",
-                    img: "sources/images/hells_zenith_3.png"
-                },
-                {
-                    title: "Remember It? Hell's Zenith (Character) Sneak Peek 4",
-                    img: "sources/images/hells_zenith_old.png"
-                },
-                {
-                    title: "NoWayBack Machine Title Screen",
-                    img: "sources/images/nowaybackmachine_1.png"
-                },
-                {
-                    title: "NoWayBack Machine Sneak Peek 1",
-                    img: "sources/images/nowaybackmachine_2.png"
-                },
-                {
-                    title: "NoWayBack Machine Settings Menu",
-                    img: "sources/images/nowaybackmachine_3.png"
-                },
-                {
-                    title: "NoWayBack Machine Unfinished Extras Menu",
-                    img: "sources/images/nowaybackmachine_4.png"
-                },
-                {
-                    title: "NoWayBack Machine Warning Splash Screen",
-                    img: "sources/images/nowaybackmachine_5.png"
-                },
-                {
-                    title: "NoWayBack Machine Sneak Peek 2",
-                    img: "sources/images/nowaybackmachine_6.png"
-                },
-                {
-                    title: "NoWayBack Machine Sneak Peek 3",
-                    img: "sources/images/nowaybackmachine_7.png"
-                },
-                {
-                    title: "NoWayBack Machine Sneak Peek 4",
-                    img: "sources/images/nowaybackmachine-render1.png"
-                },
-                {
-                    title: "NoWayBack Machine Sneak Peek 5",
-                    img: "sources/images/nowaybackmachine-render2.png"
-                },
-                {
-                    title: "NoWayBack Machine Sneak Peek 6",
-                    img: "sources/images/nowaybackmachine-render3.png"
-                },
-                {
-                    title: "NoWayBack Machine Sneak Peek 7",
-                    img: "sources/images/nowaybackmachine-render4.png"
-                },
-                {
-                    title: "What'sDown Sneak Peek 1",
-                    img: "sources/images/whatsdown_1.png"
-                },
+            // gah, too lazy to update, thanks gemini for making ts, im rlly lazy
+            const projectGallery = [
+                { title: "Title Screen", img: "sources/images/title-screen.png" },
+                { title: "Main Hall", img: "sources/images/main-hall.png" },
+                { title: "Main Hall Hall", img: "sources/images/main-hall-hall.png" },
+                { title: "Main Hall RBX", img: "sources/images/main-hall-rbx.png" },
+                { title: "Storage Room", img: "sources/images/storage-room.png" },
+                { title: "Small Storage Room", img: "sources/images/small-storage-room.png" },
+                { title: "Builderman Room", img: "sources/images/buildermanroom.png" },
+                { title: "Enter Builderman's Room", img: "sources/images/enter-buildermans-room.png" },
+                { title: "First Puzzle Room", img: "sources/images/firstpuzzleroom.png" },
+                { title: "Prototype Rigs Conversation Room", img: "sources/images/prototype-rigs-conversation-room.png" },
+                { title: "Up Corridor", img: "sources/images/up-corridor.png" },
+                { title: "Elevator", img: "sources/images/elevator.png" },
+                { title: "Night 1 Room", img: "sources/images/night1 room.png" },
+                { title: "Night 2 Room", img: "sources/images/night 2 room.png" },
+                { title: "Night 1 Vent", img: "sources/images/night 1 vent.png" },
+                { title: "Vents 1", img: "sources/images/vents1.png" },
+                { title: "Vents 2", img: "sources/images/vents2.png" },
+                { title: "Night Screen", img: "sources/images/night screen.png" },
+                { title: "Autosaving", img: "sources/images/autosaving.png" },
+                { title: "Inventory", img: "sources/images/inventory.png" },
+                { title: "HUD", img: "sources/images/hud.png" },
+                { title: "Dev Tools", img: "sources/images/dev-tools.png" },
+                { title: "Extras", img: "sources/images/extras.png" },
+                { title: "Disclaimer 1", img: "sources/images/disclaimer1.png" },
+                { title: "Disclaimer 2", img: "sources/images/disclaimer2.png" },
+                { title: "Settings 1", img: "sources/images/settings1.png" },
+                { title: "Settings 2", img: "sources/images/settings2.png" },
+                { title: "Tape 999", img: "sources/images/tape999.png" },
+                { title: "Marcus Roben VHS Tape ID 999", img: "sources/images/ruben tape 999.png" },
+                { title: "Marcus Roben Document", img: "sources/images/marcus-roben-doc.png" },
+                { title: "Trash complaint", img: "sources/images/toynegation.png" },
+                { title: "Toy Re-call", img: "sources/images/toynegationmb.png" },
+                { title: "Almost There", img: "sources/images/almostthere.png" },
+                { title: "Almost Out of There", img: "sources/images/almost out of there.png" },
+                { title: "Almost Out of There Again", img: "sources/images/almost out of there again.png" },
+                { title: "Man So Close", img: "sources/images/man so close.png" },
+                { title: "Man Just Let Me Leave", img: "sources/images/man just let me leave.png" },
+                { title: "So Close", img: "sources/images/aaaaaaaaaaaaaaa so close.png" },
+                { title: "Escape", img: "sources/images/AAAAAAAAAAAAAAA.png" },
+                { title: "NoWayBack Screen", img: "sources/images/nowaybackmachine-ss.png" },
+                { title: "NoWayBack Render 1", img: "sources/images/nowaybackmachine-render1.png" },
+                { title: "NoWayBack Render 2", img: "sources/images/nowaybackmachine-render2.png" },
+                { title: "NoWayBack Render 3", img: "sources/images/nowaybackmachine-render3.png" },
+                { title: "NoWayBack Render 4", img: "sources/images/nowaybackmachine-render4.png" },
+                { title: "NoWayBack 5", img: "sources/images/nowaybackmachine_5.png" },
+                { title: "NoWayBack 6", img: "sources/images/nowaybackmachine_6.png" },
+                { title: "NoWayBack 7", img: "sources/images/nowaybackmachine_7.png" }
             ];
 
             let currentIndex = 0;
 
+            function updateGallery(index) {
+                const imgElement = document.getElementById('galleryImage');
+
+                if (projectGallery[index]) {
+                    imgElement.src = projectGallery[index].img;
+                    imgElement.alt = projectGallery[index].title;
+                }
+            }
+
             function changeSlide(direction) {
                 currentIndex += direction;
 
-                if (currentIndex >= slides.length) {
+                if (currentIndex >= projectGallery.length) {
                     currentIndex = 0;
                 } else if (currentIndex < 0) {
-                    currentIndex = slides.length - 1;
+                    currentIndex = projectGallery.length - 1;
                 }
 
-                document.getElementById('galleryTitle').innerText = slides[currentIndex].title;
-                document.getElementById('galleryImage').src = slides[currentIndex].img;
+                updateGallery(currentIndex);
+                updateDots(currentIndex);
+            }
 
+            function updateDots(activeIndex) {
                 const dots = document.querySelectorAll('.dot');
                 dots.forEach((dot, index) => {
-                    if (index === currentIndex) {
+                    if (index === activeIndex) {
                         dot.classList.add('active');
                     } else {
                         dot.classList.remove('active');
                     }
                 });
             }
+
+            function initDots(containerId) {
+                const dotsContainer = document.getElementById(containerId);
+                if (!dotsContainer) return;
+
+                dotsContainer.innerHTML = '';
+                projectGallery.forEach((_, index) => {
+                    const dot = document.createElement('div');
+                    dot.classList.add('dot');
+                    if (index === 0) dot.classList.add('active');
+                    dotsContainer.appendChild(dot);
+                });
+            }
+
+            window.onload = () => initDots('galleryDots');
         </script>
     </body>
 </html>
