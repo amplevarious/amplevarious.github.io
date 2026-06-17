@@ -476,6 +476,7 @@
                                         <div class="dot"></div>
                                         <div class="dot"></div>
                                         <div class="dot"></div>
+                                        <div class="dot"></div>
                                         <div class="dot active"></div>
                                         <div class="dot"></div>
                                         <div class="dot"></div>
@@ -667,12 +668,12 @@
 
                 if (item.img.endsWith(".mp4")) {
                     imgElement.outerHTML = `
-            <video id="galleryImage"
+                <video id="galleryImage"
                    controls autoplay muted
                    style="width:100%;height:100%;object-fit:cover;">
-                <source src="${item.img}" type="video/mp4">
-            </video>
-        `;
+                   <source src="${item.img}" type="video/mp4">
+                </video>
+                `;
                 } else {
                     imgElement.src = item.img;
                     imgElement.alt = item.title;
